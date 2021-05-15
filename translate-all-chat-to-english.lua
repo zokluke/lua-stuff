@@ -8,7 +8,7 @@ game.Players.PlayerAdded:Connect(function(player)
 	    local data = game.HttpService:JSONDecode(xd)
 	    local res = data.translated
         print(res)
-        rconsoleprint("["..player.Name.."]: "..res.." (translated to english)")
+        rconsoleprint("["..player.Name.."]: "..res.." (translated to english)\n")
     end)
 end)
 for i, player in pairs(game.Players:GetPlayers()) do
@@ -20,6 +20,6 @@ for i, player in pairs(game.Players:GetPlayers()) do
 	        local data = game.HttpService:JSONDecode(xd)
 	        local res = data.translated
 	        print(res)
-	         rconsoleprint("["..player.Name.."]: "..res.." (translated to english)")
+	         rconsoleprint("["..player.Name.."]: "..res.." (translated to english)\n")
     end)
 end
